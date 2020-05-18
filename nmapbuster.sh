@@ -14,7 +14,7 @@ nmapBuster(){
         echo "nmap -vv -p- -oA $1/full_port_scan $1"
         echo ""
 
-        # nmap -vv -p- -oA $1/full_port_scan $1
+        nmap -vv -p- -oA $1/full_port_scan $1
 
         echo ""
         echo "Initial scan done"
@@ -26,7 +26,7 @@ nmapBuster(){
         echo "nmap -vv -A -sC -sV -oA $1/script_version_scan $1 -p $PORTS_FILTERED"
         echo ""
 
-        # nmap -vv -A -sC -sV -oA $1/script_version_scan $1 -p $PORTS_FILTERED
+        nmap -vv -A -sC -sV -oA $1/script_version_scan $1 -p $PORTS_FILTERED
 
         echo ""
         echo "Versions and scripts scan done as well"
